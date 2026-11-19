@@ -6,7 +6,7 @@
 > 「接口路径 | HTTP 方法 | 请求参数（含示例）| 响应格式（含 JSON 示例）| 修改时间」。
 > 统一响应结构：`{ "code": 0, "msg": "提示信息", "data": {...} }`，`code=0` 成功，非 0 失败。
 
-**服务地址**：`http://localhost:8325`　**接口前缀**：`/api/`
+**服务地址**：`http://localhost:210`　**接口前缀**：`/api/`
 
 ---
 
@@ -18,7 +18,7 @@
 - **请求示例**：
 
 ```text
-GET http://localhost:8325/api/news
+GET http://localhost:210/api/news
 Accept: application/json
 ```
 
@@ -63,7 +63,7 @@ Accept: application/json
 - **请求示例**：
 
 ```text
-GET http://localhost:8325/api/gallery
+GET http://localhost:210/api/gallery
 Accept: application/json
 ```
 
@@ -116,7 +116,7 @@ Accept: application/json
 - **请求示例**：
 
 ```text
-POST http://localhost:8325/api/db/test
+POST http://localhost:210/api/db/test
 Content-Type: application/json
 
 { "user": "root", "password": "root" }

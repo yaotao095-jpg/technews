@@ -2,7 +2,7 @@
  * 姓名：蒋瑞龙 | 学号：24001010210 | 时间：2026-11-19 | 大模型：deepseek-flash
  * 文件：backend/app.js
  * 说明：科技资讯站后端入口。Express + RESTful/MVC，接口统一 /api 前缀，
- *       端口固定 8325，以 express.static 托管 frontend/，并允许所有跨域访问。
+ *       端口固定 210，以 express.static 托管 frontend/，并允许所有跨域访问。
  */
 const path = require('path');
 const express = require('express');
@@ -15,7 +15,7 @@ const Cheney_apiRoutes = require('./routes/Cheney_index');
 const { Cheney_checkConnection } = require('./config/Cheney_db');
 
 const Cheney_app = express();
-const Cheney_PORT = 8325;
+const Cheney_PORT = 210;
 
 // 允许所有跨域访问
 Cheney_app.use(cors());

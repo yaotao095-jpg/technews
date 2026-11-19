@@ -1,6 +1,6 @@
 @echo off
 chcp 65001 >nul
-title 科技资讯站 - 后端服务（端口 8325）
+title 科技资讯站 - 后端服务（端口 210）
 
 rem ============================================================
 rem  姓名：蒋瑞龙 | 学号：24001010210 | 时间：2026-11-19 | 大模型：deepseek-flash
@@ -32,11 +32,11 @@ set /p "DB_PASSWORD=请输入本机 MySQL 密码（直接回车默认 root）：
 if not defined DB_PASSWORD set "DB_PASSWORD=root"
 
 :run
-echo [3/4] 启动服务：http://localhost:8325
+echo [3/4] 启动服务：http://localhost:210
 echo        按 Ctrl + C 可停止服务。
 echo.
 
-start "" http://localhost:8325
+start "" http://localhost:210
 node app.js
 
 echo.

@@ -81,3 +81,17 @@
    追加记录到 backend/Cheney_interface.md。
 3. 实际启动服务，逐个访问首页、news.html、gallery.html、database.html 与三个接口，确认返回正常、无报错。
 ```
+
+---
+
+## 记录 5
+
+- **时间**：2026-11-19 13:39
+- **大模型**：deepseek-flash
+- **提示词全文**：
+
+```text
+端口改为学号后三位，如何（然后）把我的项目打开让我看一下。
+```
+
+> 执行结果：服务端口由 8325 改为 **210**（学号 24001010210 后三位），同步更新 backend/app.js、四个页面里的接口地址、三个 JS 的提示文案、启动.bat、readme.md、AGENTS.md 与 backend/Cheney_interface.md。

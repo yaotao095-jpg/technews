@@ -33,7 +33,7 @@ technews/
 │  ├─ images/              # 本地 SVG 配图
 │  └─ fonts/               # iconfont 图标目录（本项未使用）
 └─ backend/                # Node.js + Express（RESTful + MVC）
-   ├─ app.js               # 入口，端口 8325，托管 frontend
+   ├─ app.js               # 入口，端口 210，托管 frontend
    ├─ .env.example          # 数据库凭据模板（复制为 .env 后填写，.env 已加入 .gitignore）
    ├─ config/              # 数据库连接池
    ├─ models/              # 数据访问层
@@ -58,7 +58,7 @@ technews/
    不建 `.env` 时，`启动.bat` 会临时询问密码，仅对本次进程生效。
 3. 按 `backend/Cheney_database.md` 中的 SQL 重建数据库（仅换机器时需要）。
 4. 双击根目录的 `启动.bat`，或在 `backend/` 下执行 `node app.js`。
-5. 浏览器打开 <http://localhost:8325>。
+5. 浏览器打开 <http://localhost:210>。
 
 ## 接口一览
 
