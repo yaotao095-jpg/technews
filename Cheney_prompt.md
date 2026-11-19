@@ -128,3 +128,12 @@
 > 自检结论：除端口按用户要求由 8325 改为 8210 外，其余要求均已满足。
 
 
+
+## 记录 8：发布到 GitHub Pages
+
+- 仓库：https://github.com/yaotao095-jpg/technews （Public，默认分支 master）
+- 网络：本机需走代理 `http://127.0.0.1:7890` 才能访问 github.com，故提交后推送命令为：
+  `git -c http.proxy=http://127.0.0.1:7890 push -u origin master`
+- GitHub Pages 是纯静态托管，`backend/` 与 MySQL 无法运行；已新增 `frontend/data/Cheney_newsData.js`、`frontend/data/Cheney_galleryData.js` 静态快照，前端 fetch 失败时自动回退并提示“静态演示数据”。
+- 新增 `.github/workflows/deploy.yml`：把 `frontend/` 打包发布到 Pages；`actions/configure-pages@v5` 加 `enablement: true`，首次运行会自动开启 Pages。
+- 访问地址（Actions 跑完后）：https://yaotao095-jpg.github.io/technews/
