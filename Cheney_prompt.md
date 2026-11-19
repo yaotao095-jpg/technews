@@ -137,3 +137,9 @@
 - GitHub Pages 是纯静态托管，`backend/` 与 MySQL 无法运行；已新增 `frontend/data/Cheney_newsData.js`、`frontend/data/Cheney_galleryData.js` 静态快照，前端 fetch 失败时自动回退并提示“静态演示数据”。
 - 新增 `.github/workflows/deploy.yml`：把 `frontend/` 打包发布到 Pages；`actions/configure-pages@v5` 加 `enablement: true`，首次运行会自动开启 Pages。
 - 访问地址（Actions 跑完后）：https://yaotao095-jpg.github.io/technews/
+
+## 记录 9：修复 Pages 子路径下的图片 404
+
+- 现象：线上 https://yaotao095-jpg.github.io/technews/ 的新闻/图文卡片图片显示为 alt 文字（裂图）。
+- 原因：数据库里 `Cheney_cover_url`、`Cheney_image_url` 存的是 `/images/Cheney_xxx.svg`（以斜杠开头的根路径）；Pages 把站点挂在 `/technews/` 子路径下，`/images/...` 会指到域名根而 404。
+- 修复：`frontend/js/Cheney_news.js`、`frontend/js/Cheney_gallery.js` 新增 `Cheney_toRelative(url, fallback)`，把开头斜杠去掉后再赋给 `<img src>`，本地与线上都能正确解析。

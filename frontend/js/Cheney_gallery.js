@@ -34,11 +34,17 @@
       : '<span class="Cheney_spinner"></span><span>' + Cheney_escapeHtml(Cheney_message) + '</span>';
   }
 
+  // 数据库里存的是 /images/xxx.svg 这种以斜杠开头的路径，
+  // GitHub Pages 部署在 /technews/ 子路径下会 404，这里统一转成相对路径。
+  function Cheney_toRelative(Cheney_url, Cheney_fallback) {
+    return String(Cheney_url || Cheney_fallback).replace(/^\/+/, '');
+  }
+
   function Cheney_renderCards(Cheney_list) {
     Cheney_gridEl.innerHTML = Cheney_list.map(function (Cheney_item, Cheney_index) {
       var Cheney_title = Cheney_escapeHtml(Cheney_item.Cheney_title);
       var Cheney_intro = Cheney_escapeHtml(Cheney_item.Cheney_intro);
-      var Cheney_image = Cheney_escapeHtml(Cheney_item.Cheney_image_url || 'images/Cheney_gallery_1.svg');
+      var Cheney_image = Cheney_escapeHtml(Cheney_toRelative(Cheney_item.Cheney_image_url, 'images/Cheney_gallery_1.svg'));
       var Cheney_delay = ((Cheney_index % 4) * 0.07).toFixed(2);
 
       return '' +
