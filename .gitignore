@@ -9,7 +9,6 @@ pnpm-debug.log*
 .DS_Store
 Thumbs.db
 *.log
-.vscode/
 .idea/
 
 # 本地验收截图（仅演示用，不算项目源码）

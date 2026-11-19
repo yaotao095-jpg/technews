@@ -1,0 +1,15 @@
+// 姓名：蒋瑞龙 | 学号：24001010210 | 时间：2026-11-19 | 大模型：deepseek-flash
+// 说明：VS Code 工作区设置。仅用于让资源管理器更清爽，不参与项目运行。
+{
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/_screenshots": true,
+    "**/_shot_*.png": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/package-lock.json": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true
+}
