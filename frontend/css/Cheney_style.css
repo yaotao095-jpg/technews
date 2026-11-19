@@ -45,10 +45,14 @@ button, input { font-family: inherit; }
 
 /* ===== 首页：深色 Canvas 主题 ===== */
 .Cheney_body_index {
-  background:
+  min-height: 100vh;
+  background-color: #060d1b;
+  background-image:
     radial-gradient(900px 520px at 12% -8%, rgba(56, 189, 248, 0.16), transparent 60%),
     radial-gradient(760px 460px at 92% 4%, rgba(129, 140, 248, 0.18), transparent 62%),
     linear-gradient(160deg, #060d1b 0%, #0a1730 52%, #081120 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #e8eefc;
 }
 

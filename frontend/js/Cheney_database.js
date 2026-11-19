@@ -32,13 +32,10 @@
   }
 
   function Cheney_renderRows(Cheney_pairs) {
-    return Cheney_pairs.map(function (Cheney_pair) {
-      return '' +
-        '<div class="Cheney_kv">' +
-          '<span>' + Cheney_escapeHtml(Cheney_pair[0]) + '</span>' +
-          '<b>' + Cheney_escapeHtml(Cheney_pair[1]) + '</b>' +
-        '</div>';
-    }).join('');
+    return '<dl class="Cheney_kv">' + Cheney_pairs.map(function (Cheney_pair) {
+      return '<dt>' + Cheney_escapeHtml(Cheney_pair[0]) + '</dt>' +
+        '<dd>' + Cheney_escapeHtml(Cheney_pair[1]) + '</dd>';
+    }).join('') + '</dl>';
   }
 
   function Cheney_renderSuccess(Cheney_data) {
@@ -51,9 +48,9 @@
 
     var Cheney_tables = Array.isArray(Cheney_data.tables) ? Cheney_data.tables : [];
     var Cheney_tableHtml = Cheney_tables.length
-      ? '<div class="Cheney_tables">' + Cheney_tables.map(function (Cheney_name) {
-          return '<span class="Cheney_field_label">' + Cheney_escapeHtml(Cheney_name) + '</span>';
-        }).join('') + '</div>'
+      ? '<ul class="Cheney_tables">' + Cheney_tables.map(function (Cheney_name) {
+          return '<li>' + Cheney_escapeHtml(Cheney_name) + '</li>';
+        }).join('') + '</ul>'
       : '<p class="Cheney_hint">当前数据库暂无数据表，可继续执行 Cheney_database.md 中的建表语句。</p>';
 
     Cheney_resultEl.className = 'Cheney_result Cheney_result_show Cheney_result_ok';

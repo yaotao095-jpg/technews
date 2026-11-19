@@ -11,3 +11,7 @@ Thumbs.db
 *.log
 .vscode/
 .idea/
+
+# 本地验收截图（仅演示用，不算项目源码）
+_screenshots/
+_shot_*.png
