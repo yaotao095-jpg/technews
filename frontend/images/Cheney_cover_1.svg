@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="大模型推理">
+  <defs>
+    <linearGradient id="Cheney_bg0" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1a33"/>
+      <stop offset="1" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <radialGradient id="Cheney_glow0" cx="0.85" cy="0.05" r="0.75">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="Cheney_shade0" x1="0" y1="0.55" x2="0" y2="1">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#Cheney_bg0)"/>
+  <rect width="800" height="450" fill="url(#Cheney_glow0)"/>
+  <circle cx="624" cy="126.00000000000001" r="90" fill="none" stroke="#38bdf8" stroke-opacity="0.26" stroke-width="1.4"/><circle cx="624" cy="126.00000000000001" r="152" fill="none" stroke="#38bdf8" stroke-opacity="0.22" stroke-width="1.4"/><circle cx="624" cy="126.00000000000001" r="214" fill="none" stroke="#38bdf8" stroke-opacity="0.18" stroke-width="1.4"/><circle cx="624" cy="126.00000000000001" r="276" fill="none" stroke="#38bdf8" stroke-opacity="0.14" stroke-width="1.4"/><circle cx="624" cy="126.00000000000001" r="338" fill="none" stroke="#38bdf8" stroke-opacity="0.1" stroke-width="1.4"/><circle cx="636.2" cy="372.5" r="2.7" fill="#ffffff" fill-opacity="0.34"/><circle cx="14.2" cy="191.3" r="1.7" fill="#ffffff" fill-opacity="0.11"/><circle cx="606.0" cy="315.2" r="2.5" fill="#ffffff" fill-opacity="0.14"/><circle cx="684.4" cy="225.2" r="2.3" fill="#ffffff" fill-opacity="0.09"/><circle cx="183.9" cy="147.3" r="2.4" fill="#ffffff" fill-opacity="0.33"/><circle cx="206.7" cy="160.5" r="2.9" fill="#ffffff" fill-opacity="0.17"/><circle cx="140.1" cy="67.8" r="1.5" fill="#ffffff" fill-opacity="0.32"/><circle cx="679.9" cy="319.4" r="2.1" fill="#ffffff" fill-opacity="0.37"/><circle cx="327.9" cy="421.8" r="2.8" fill="#ffffff" fill-opacity="0.12"/><circle cx="281.2" cy="227.0" r="1.9" fill="#ffffff" fill-opacity="0.14"/><circle cx="22.9" cy="14.4" r="2.7" fill="#ffffff" fill-opacity="0.29"/><circle cx="644.0" cy="314.4" r="1.2" fill="#ffffff" fill-opacity="0.32"/><circle cx="720.8" cy="62.1" r="1.1" fill="#ffffff" fill-opacity="0.25"/><circle cx="683.8" cy="242.2" r="1.6" fill="#ffffff" fill-opacity="0.23"/><circle cx="146.7" cy="349.2" r="2.6" fill="#ffffff" fill-opacity="0.26"/><circle cx="161.7" cy="370.4" r="2.2" fill="#ffffff" fill-opacity="0.10"/><circle cx="317.7" cy="282.5" r="3.0" fill="#ffffff" fill-opacity="0.29"/><circle cx="340.2" cy="193.7" r="1.9" fill="#ffffff" fill-opacity="0.34"/><circle cx="102.9" cy="11.5" r="1.6" fill="#ffffff" fill-opacity="0.28"/><circle cx="18.0" cy="313.9" r="1.7" fill="#ffffff" fill-opacity="0.17"/><circle cx="692.7" cy="403.5" r="2.4" fill="#ffffff" fill-opacity="0.11"/><circle cx="731.9" cy="145.4" r="2.0" fill="#ffffff" fill-opacity="0.12"/><circle cx="82.5" cy="133.8" r="1.2" fill="#ffffff" fill-opacity="0.11"/><circle cx="128.9" cy="237.6" r="3.4" fill="#ffffff" fill-opacity="0.36"/><circle cx="61.8" cy="328.6" r="3.2" fill="#ffffff" fill-opacity="0.29"/><circle cx="396.2" cy="83.7" r="2.3" fill="#ffffff" fill-opacity="0.22"/>
+  <rect width="800" height="450" fill="url(#Cheney_shade0)"/>
+  <text x="40" y="392" fill="#eef5ff" font-size="31" font-weight="700" font-family="Microsoft YaHei, PingFang SC, sans-serif">大模型推理</text>
+  <text x="40" y="420" fill="#a8c0e0" font-size="15" font-family="Consolas, monospace" letter-spacing="3">TECH NEWS · 2026</text>
+  <rect x="40" y="366" width="34" height="3" fill="#38bdf8"/>
+</svg>

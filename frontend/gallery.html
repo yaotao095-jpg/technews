@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>图文列表 · 科技资讯站</title>
+<!-- 姓名：蒋瑞龙 | 学号：24001010210 | 时间：2026-11-19 | 大模型：deepseek-flash -->
+<meta name="description" content="科技资讯站 · 图文列表页，数据来自 MySQL 的 Cheney_gallery 表">
+<link rel="stylesheet" href="css/Cheney_style.css">
+</head>
+<body>
+<header class="Cheney_topbar">
+  <a class="Cheney_brand" href="index.html">
+    <span class="Cheney_brand_mark">科</span>
+    <span>科技资讯站 <span class="Cheney_brand_sub">/ 高级网页设计</span></span>
+  </a>
+  <a class="Cheney_backlink" href="index.html">← 返回首页</a>
+</header>
+
+<section class="Cheney_pagehead">
+  <span class="Cheney_pagehead_kicker">GALLERY · 02</span>
+  <h1 class="Cheney_pagehead_title">图文列表</h1>
+  <p class="Cheney_pagehead_desc">图文数据存放在 MySQL 的 <code>Cheney_gallery</code> 表中，配图为项目内 <code>frontend/images/</code> 下的 SVG 文件，随代码一起提交，不依赖任何外部图床。</p>
+  <p class="Cheney_api">
+    <span class="Cheney_api_label">接口地址</span>
+    <a class="Cheney_api_url" id="Cheney_apiUrl" href="/api/gallery" target="_blank" rel="noopener">GET http://localhost:8325/api/gallery</a>
+  </p>
+</section>
+
+<main class="Cheney_container">
+  <div class="Cheney_toolbar">
+    <p class="Cheney_count">共 <b id="Cheney_galleryTotal">-</b> 组图文 <span class="Cheney_hint">（接口返回数据同时输出到浏览器控制台）</span></p>
+    <button class="Cheney_btn Cheney_btn_ghost" id="Cheney_galleryRawBtn" type="button" aria-expanded="false">查看接口原始返回</button>
+  </div>
+
+  <pre class="Cheney_raw" id="Cheney_galleryRaw" hidden></pre>
+
+  <div class="Cheney_gallerygrid" id="Cheney_galleryGrid"></div>
+
+  <div class="Cheney_state" id="Cheney_galleryState">
+    <span class="Cheney_spinner"></span>
+    <span>正在请求 /api/gallery ...</span>
+  </div>
+</main>
+
+<footer class="Cheney_footer_light">
+  <span>姓名：蒋瑞龙 · 学号：24001010210</span>
+  <span>科技资讯站 · 原生前端 + Express + MySQL</span>
+</footer>
+
+<script src="js/Cheney_gallery.js"></script>
+</body>
+</html>

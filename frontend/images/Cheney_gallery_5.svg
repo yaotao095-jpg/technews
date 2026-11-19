@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="数据中心机房">
+  <defs>
+    <linearGradient id="Cheney_bg7" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b1032"/>
+      <stop offset="1" stop-color="#4338ca"/>
+    </linearGradient>
+    <radialGradient id="Cheney_glow7" cx="0.85" cy="0.05" r="0.75">
+      <stop offset="0" stop-color="#818cf8" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#818cf8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="Cheney_shade7" x1="0" y1="0.55" x2="0" y2="1">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#Cheney_bg7)"/>
+  <rect width="800" height="600" fill="url(#Cheney_glow7)"/>
+  <rect x="3.0" y="270.9" width="44.0" height="259.1" rx="4" fill="#818cf8" fill-opacity="0.27"/><rect x="53.0" y="171.5" width="44.0" height="358.5" rx="4" fill="#818cf8" fill-opacity="0.21"/><rect x="103.0" y="462.1" width="44.0" height="67.9" rx="4" fill="#818cf8" fill-opacity="0.11"/><rect x="153.0" y="378.5" width="44.0" height="151.5" rx="4" fill="#818cf8" fill-opacity="0.14"/><rect x="203.0" y="329.5" width="44.0" height="200.5" rx="4" fill="#818cf8" fill-opacity="0.17"/><rect x="253.0" y="434.4" width="44.0" height="95.6" rx="4" fill="#818cf8" fill-opacity="0.24"/><rect x="303.0" y="330.1" width="44.0" height="199.9" rx="4" fill="#818cf8" fill-opacity="0.18"/><rect x="353.0" y="450.3" width="44.0" height="79.7" rx="4" fill="#818cf8" fill-opacity="0.22"/><rect x="403.0" y="313.4" width="44.0" height="216.6" rx="4" fill="#818cf8" fill-opacity="0.22"/><rect x="453.0" y="419.8" width="44.0" height="110.2" rx="4" fill="#818cf8" fill-opacity="0.24"/><rect x="503.0" y="297.0" width="44.0" height="233.0" rx="4" fill="#818cf8" fill-opacity="0.27"/><rect x="553.0" y="256.0" width="44.0" height="274.0" rx="4" fill="#818cf8" fill-opacity="0.17"/><rect x="603.0" y="170.3" width="44.0" height="359.7" rx="4" fill="#818cf8" fill-opacity="0.27"/><rect x="653.0" y="427.0" width="44.0" height="103.0" rx="4" fill="#818cf8" fill-opacity="0.20"/><rect x="703.0" y="180.4" width="44.0" height="349.6" rx="4" fill="#818cf8" fill-opacity="0.18"/><rect x="753.0" y="253.9" width="44.0" height="276.1" rx="4" fill="#818cf8" fill-opacity="0.11"/><path d="M0 372 L800 204.00000000000003" stroke="#818cf8" stroke-opacity="0.5" stroke-width="2" fill="none"/>
+  <rect width="800" height="600" fill="url(#Cheney_shade7)"/>
+  <text x="40" y="542" fill="#eef5ff" font-size="31" font-weight="700" font-family="Microsoft YaHei, PingFang SC, sans-serif">数据中心机房</text>
+  <text x="40" y="570" fill="#a8c0e0" font-size="15" font-family="Consolas, monospace" letter-spacing="3">CHENEY GALLERY · 2026</text>
+  <rect x="40" y="516" width="34" height="3" fill="#818cf8"/>
+</svg>

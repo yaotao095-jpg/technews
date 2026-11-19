@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="浏览器 AI">
+  <defs>
+    <linearGradient id="Cheney_bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1420"/>
+      <stop offset="1" stop-color="#0369a1"/>
+    </linearGradient>
+    <radialGradient id="Cheney_glow4" cx="0.85" cy="0.05" r="0.75">
+      <stop offset="0" stop-color="#7dd3fc" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#7dd3fc" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="Cheney_shade4" x1="0" y1="0.55" x2="0" y2="1">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#Cheney_bg4)"/>
+  <rect width="800" height="450" fill="url(#Cheney_glow4)"/>
+  <rect x="3.0" y="271.3" width="44.0" height="108.7" rx="4" fill="#7dd3fc" fill-opacity="0.33"/><rect x="53.0" y="175.3" width="44.0" height="204.7" rx="4" fill="#7dd3fc" fill-opacity="0.41"/><rect x="103.0" y="213.8" width="44.0" height="166.2" rx="4" fill="#7dd3fc" fill-opacity="0.30"/><rect x="153.0" y="313.5" width="44.0" height="66.5" rx="4" fill="#7dd3fc" fill-opacity="0.39"/><rect x="203.0" y="273.6" width="44.0" height="106.4" rx="4" fill="#7dd3fc" fill-opacity="0.36"/><rect x="253.0" y="167.4" width="44.0" height="212.6" rx="4" fill="#7dd3fc" fill-opacity="0.23"/><rect x="303.0" y="337.7" width="44.0" height="42.3" rx="4" fill="#7dd3fc" fill-opacity="0.26"/><rect x="353.0" y="123.6" width="44.0" height="256.4" rx="4" fill="#7dd3fc" fill-opacity="0.34"/><rect x="403.0" y="95.1" width="44.0" height="284.9" rx="4" fill="#7dd3fc" fill-opacity="0.19"/><rect x="453.0" y="170.7" width="44.0" height="209.3" rx="4" fill="#7dd3fc" fill-opacity="0.14"/><rect x="503.0" y="156.7" width="44.0" height="223.3" rx="4" fill="#7dd3fc" fill-opacity="0.35"/><rect x="553.0" y="296.9" width="44.0" height="83.1" rx="4" fill="#7dd3fc" fill-opacity="0.39"/><rect x="603.0" y="186.1" width="44.0" height="193.9" rx="4" fill="#7dd3fc" fill-opacity="0.34"/><rect x="653.0" y="334.8" width="44.0" height="45.2" rx="4" fill="#7dd3fc" fill-opacity="0.18"/><rect x="703.0" y="237.9" width="44.0" height="142.1" rx="4" fill="#7dd3fc" fill-opacity="0.33"/><rect x="753.0" y="295.4" width="44.0" height="84.6" rx="4" fill="#7dd3fc" fill-opacity="0.33"/><path d="M0 279 L800 153" stroke="#7dd3fc" stroke-opacity="0.5" stroke-width="2" fill="none"/>
+  <rect width="800" height="450" fill="url(#Cheney_shade4)"/>
+  <text x="40" y="392" fill="#eef5ff" font-size="31" font-weight="700" font-family="Microsoft YaHei, PingFang SC, sans-serif">浏览器 AI</text>
+  <text x="40" y="420" fill="#a8c0e0" font-size="15" font-family="Consolas, monospace" letter-spacing="3">TECH NEWS · 2026</text>
+  <rect x="40" y="366" width="34" height="3" fill="#7dd3fc"/>
+</svg>

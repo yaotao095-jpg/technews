@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="智能小车">
+  <defs>
+    <linearGradient id="Cheney_bg8" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1a33"/>
+      <stop offset="1" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <radialGradient id="Cheney_glow8" cx="0.85" cy="0.05" r="0.75">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="Cheney_shade8" x1="0" y1="0.55" x2="0" y2="1">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#Cheney_bg8)"/>
+  <rect width="800" height="600" fill="url(#Cheney_glow8)"/>
+  <path d="M-180 600 L300 0" stroke="#ffffff" stroke-opacity="0.05" stroke-width="22"/><path d="M-90 600 L390 0" stroke="#ffffff" stroke-opacity="0.05" stroke-width="22"/><path d="M0 600 L480 0" stroke="#ffffff" stroke-opacity="0.05" stroke-width="22"/><path d="M90 600 L570 0" stroke="#ffffff" stroke-opacity="0.05" stroke-width="22"/><path d="M180 600 L660 0" stroke="#ffffff" stroke-opacity="0.05" stroke-width="22"/><path d="M270 600 L750 0" stroke="#ffffff" stroke-opacity="0.05" stroke-width="22"/><path d="M360 600 L840 0" stroke="#ffffff" stroke-opacity="0.05" stroke-width="22"/><path d="M450 600 L930 0" stroke="#ffffff" stroke-opacity="0.05" stroke-width="22"/><path d="M540 600 L1020 0" stroke="#ffffff" stroke-opacity="0.05" stroke-width="22"/><path d="M630 600 L1110 0" stroke="#ffffff" stroke-opacity="0.05" stroke-width="22"/><path d="M720 600 L1200 0" stroke="#ffffff" stroke-opacity="0.05" stroke-width="22"/><path d="M810 600 L1290 0" stroke="#ffffff" stroke-opacity="0.05" stroke-width="22"/><path d="M900 600 L1380 0" stroke="#ffffff" stroke-opacity="0.05" stroke-width="22"/><path d="M990 600 L1470 0" stroke="#ffffff" stroke-opacity="0.05" stroke-width="22"/><ellipse cx="576" cy="204.00000000000003" rx="240" ry="180" fill="#38bdf8" fill-opacity="0.18"/><circle cx="449.4" cy="514.9" r="2.2" fill="#ffffff" fill-opacity="0.24"/><circle cx="291.5" cy="185.6" r="2.2" fill="#ffffff" fill-opacity="0.16"/><circle cx="175.2" cy="288.5" r="1.1" fill="#ffffff" fill-opacity="0.35"/><circle cx="534.3" cy="497.1" r="1.2" fill="#ffffff" fill-opacity="0.15"/><circle cx="157.3" cy="269.0" r="2.1" fill="#ffffff" fill-opacity="0.19"/><circle cx="287.6" cy="304.0" r="1.1" fill="#ffffff" fill-opacity="0.47"/><circle cx="651.3" cy="118.4" r="2.0" fill="#ffffff" fill-opacity="0.20"/><circle cx="691.7" cy="162.3" r="2.5" fill="#ffffff" fill-opacity="0.26"/><circle cx="113.4" cy="22.0" r="0.8" fill="#ffffff" fill-opacity="0.41"/><circle cx="593.4" cy="128.0" r="1.9" fill="#ffffff" fill-opacity="0.29"/><circle cx="79.5" cy="375.6" r="1.2" fill="#ffffff" fill-opacity="0.50"/><circle cx="20.6" cy="591.9" r="2.0" fill="#ffffff" fill-opacity="0.32"/><circle cx="156.3" cy="564.0" r="2.1" fill="#ffffff" fill-opacity="0.25"/><circle cx="237.6" cy="46.3" r="1.8" fill="#ffffff" fill-opacity="0.34"/><circle cx="315.2" cy="501.1" r="1.4" fill="#ffffff" fill-opacity="0.14"/><circle cx="429.4" cy="83.0" r="1.1" fill="#ffffff" fill-opacity="0.42"/><circle cx="706.1" cy="566.1" r="2.3" fill="#ffffff" fill-opacity="0.29"/><circle cx="243.3" cy="310.6" r="1.3" fill="#ffffff" fill-opacity="0.44"/>
+  <rect width="800" height="600" fill="url(#Cheney_shade8)"/>
+  <text x="40" y="542" fill="#eef5ff" font-size="31" font-weight="700" font-family="Microsoft YaHei, PingFang SC, sans-serif">智能小车</text>
+  <text x="40" y="570" fill="#a8c0e0" font-size="15" font-family="Consolas, monospace" letter-spacing="3">CHENEY GALLERY · 2026</text>
+  <rect x="40" y="516" width="34" height="3" fill="#38bdf8"/>
+</svg>

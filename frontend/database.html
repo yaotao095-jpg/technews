@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据库连接测试 · 科技资讯站</title>
+<!-- 姓名：蒋瑞龙 | 学号：24001010210 | 时间：2026-11-19 | 大模型：deepseek-flash -->
+<meta name="description" content="科技资讯站 · MySQL 数据库连接测试页">
+<link rel="stylesheet" href="css/Cheney_style.css">
+</head>
+<body>
+<header class="Cheney_topbar">
+  <a class="Cheney_brand" href="index.html">
+    <span class="Cheney_brand_mark">科</span>
+    <span>科技资讯站 <span class="Cheney_brand_sub">/ 高级网页设计</span></span>
+  </a>
+  <a class="Cheney_backlink" href="index.html">← 返回首页</a>
+</header>
+
+<section class="Cheney_pagehead">
+  <span class="Cheney_pagehead_kicker">DATABASE · 03</span>
+  <h1 class="Cheney_pagehead_title">数据库连接测试</h1>
+  <p class="Cheney_pagehead_desc">输入 MySQL 的用户名与密码，前端调用后端接口，由后端用一次性连接尝试登录本机 MySQL。成功会返回版本号、端口和数据库中的表；失败会返回具体原因。</p>
+  <p class="Cheney_api">
+    <span class="Cheney_api_label">接口地址</span>
+    <a class="Cheney_api_url" href="/api/db/test" target="_blank" rel="noopener">POST http://localhost:8325/api/db/test</a>
+  </p>
+</section>
+
+<main class="Cheney_container">
+  <section class="Cheney_panel">
+    <h2 class="Cheney_panel_title">连接 MySQL</h2>
+    <p class="Cheney_panel_desc">默认值来自本机 MySQL 账户（root / root），可在下面的输入框中修改后重试。</p>
+
+    <form id="Cheney_dbForm" novalidate>
+      <label class="Cheney_field">
+        <span class="Cheney_field_label">用户名</span>
+        <input class="Cheney_field_input" id="Cheney_dbUser" name="user" type="text" value="root" autocomplete="username" spellcheck="false">
+      </label>
+
+      <label class="Cheney_field">
+        <span class="Cheney_field_label">密码</span>
+        <input class="Cheney_field_input" id="Cheney_dbPassword" name="password" type="password" value="root" autocomplete="current-password">
+      </label>
+
+      <div class="Cheney_btns">
+        <button class="Cheney_btn" id="Cheney_dbSubmit" type="submit">连接数据库</button>
+        <button class="Cheney_btn Cheney_btn_ghost" id="Cheney_dbReset" type="reset">重置</button>
+      </div>
+    </form>
+
+    <div class="Cheney_result" id="Cheney_dbResult" role="status" aria-live="polite"></div>
+  </section>
+</main>
+
+<footer class="Cheney_footer_light">
+  <span>姓名：蒋瑞龙 · 学号：24001010210</span>
+  <span>科技资讯站 · 原生前端 + Express + MySQL</span>
+</footer>
+
+<script src="js/Cheney_database.js"></script>
+</body>
+</html>
