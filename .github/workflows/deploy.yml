@@ -1,0 +1,44 @@
+# 姓名：蒋瑞龙 | 学号：24001010210 | 时间：2026-11-19 | 大模型：deepseek-flash
+# 文件：.github/workflows/deploy.yml
+# 说明：把 frontend/ 目录发布到 GitHub Pages（纯静态托管）。
+#      后端 backend/ 与 MySQL 无法在 Pages 上运行，页面会自动回退到
+#      frontend/data/ 下的静态快照数据。
+
+name: 部署前端到 GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 配置 Pages
+        uses: actions/configure-pages@v5
+
+      - name: 打包 frontend 目录
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./frontend
+
+      - name: 发布
+        id: deployment
+        uses: actions/deploy-pages@v4

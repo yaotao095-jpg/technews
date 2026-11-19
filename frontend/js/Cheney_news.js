@@ -2,7 +2,9 @@
  * 姓名：蒋瑞龙 | 学号：24001010210 | 时间：2026-11-19 | 大模型：deepseek-flash
  * 文件：frontend/js/Cheney_news.js
  * 说明：科技新闻列表页。用 fetch 调用 GET /api/news，渲染卡片，
- *      并把接口返回的完整数据输出到浏览器控制台。
+ *      并把接口返回的完整数据输出到浏览器控制台；
+ *      接口不可用（如部署到 GitHub Pages 纯静态环境）时，
+ *      自动回退到 data/Cheney_newsData.js 的静态快照。
  */
 (function () {
   'use strict';
@@ -102,15 +104,38 @@
         Cheney_rawEl.textContent = JSON.stringify(Cheney_json, null, 2);
       }
     } catch (Cheney_err) {
-      console.error('[Cheney_news] 请求失败：', Cheney_err);
-      Cheney_showState('新闻加载失败：' + Cheney_err.message + '（请检查后端是否已在 8210 端口启动）', true);
-      Cheney_totalEl.textContent = '0';
+      console.error('[Cheney_news] 接口请求失败：', Cheney_err);
+      Cheney_useStaticData(Cheney_err);
     }
   }
 
   if (Cheney_apiUrlEl) {
-    Cheney_apiUrlEl.textContent = 'GET ' + window.location.origin + Cheney_API;
+    // 本机访问时显示完整地址，纯静态部署（如 GitHub Pages）只显示相对路径
+    var Cheney_isLocal = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(window.location.hostname);
+    Cheney_apiUrlEl.textContent = 'GET ' + (Cheney_isLocal ? window.location.origin : '') + Cheney_API;
     Cheney_apiUrlEl.setAttribute('href', Cheney_API);
+  }
+
+  // 纯静态环境（如 GitHub Pages）没有后端，用 data/ 下的静态快照兜底展示
+  function Cheney_useStaticData(Cheney_err) {
+    var Cheney_static = window.Cheney_newsStaticData;
+    if (!Cheney_static || !Cheney_static.data || !Cheney_static.data.list) {
+      Cheney_showState('新闻加载失败：' + Cheney_err.message + '（请检查后端是否已在 8210 端口启动）', true);
+      Cheney_totalEl.textContent = '0';
+      return;
+    }
+    var Cheney_list = Cheney_static.data.list;
+    Cheney_stateEl.hidden = true;
+    Cheney_renderCards(Cheney_list);
+    Cheney_totalEl.textContent = String(Cheney_static.data.total !== undefined ? Cheney_static.data.total : Cheney_list.length);
+    if (Cheney_rawEl) {
+      Cheney_rawEl.textContent = JSON.stringify(Cheney_static, null, 2);
+    }
+    var Cheney_hintEl = document.querySelector('.Cheney_hint');
+    if (Cheney_hintEl) {
+      Cheney_hintEl.textContent = '（当前为静态演示数据，来自 data/Cheney_newsData.js）';
+    }
+    console.info('[Cheney_news] 接口不可用，已切换到静态快照：', Cheney_static);
   }
 
   Cheney_bindRawToggle();

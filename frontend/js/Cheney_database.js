@@ -118,7 +118,7 @@
       }
     } catch (Cheney_err) {
       console.error('[Cheney_database] 请求异常：', Cheney_err);
-      Cheney_renderError('无法访问后端接口：' + Cheney_err.message + '（请确认已在 8210 端口启动服务）', 'NETWORK_ERROR');
+      Cheney_renderError('无法访问后端接口：' + Cheney_err.message + '（请确认已在 8210 端口启动服务；若当前是 GitHub Pages 静态演示环境，本页需要在本机运行 backend 才能使用）', 'NETWORK_ERROR');
     } finally {
       Cheney_setLoading(false);
     }
