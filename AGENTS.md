@@ -9,7 +9,7 @@
   - 目录结构：frontend/ 下建 css/、js/、fonts/、images/ 子目录；
     fonts/ 存放 iconfont 图标文件（如果有）
 - 后端：backend/ 目录，Node.js + Express，RESTful+MVC 风格，
-  所有接口以 /api/ 为前缀，端口固定为 210（本人学号 24001010210 后三位），
+  所有接口以 /api/ 为前缀，端口固定为 8210，
   并以 express.static 托管 frontend/ 目录
   后端支持所有跨域访问。
 - 后端依赖安装：优先 cnpm i 包名；失败或超时则使用 npm i 包名

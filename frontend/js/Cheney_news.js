@@ -103,7 +103,7 @@
       }
     } catch (Cheney_err) {
       console.error('[Cheney_news] 请求失败：', Cheney_err);
-      Cheney_showState('新闻加载失败：' + Cheney_err.message + '（请检查后端是否已在 210 端口启动）', true);
+      Cheney_showState('新闻加载失败：' + Cheney_err.message + '（请检查后端是否已在 8210 端口启动）', true);
       Cheney_totalEl.textContent = '0';
     }
   }

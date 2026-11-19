@@ -95,3 +95,18 @@
 ```
 
 > 执行结果：服务端口由 8325 改为 **210**（学号 24001010210 后三位），同步更新 backend/app.js、四个页面里的接口地址、三个 JS 的提示文案、启动.bat、readme.md、AGENTS.md 与 backend/Cheney_interface.md。
+
+---
+
+## 记录 6
+
+- **时间**：2026-11-19 13:42
+- **大模型**：deepseek-flash
+- **提示词全文**：
+
+```text
+端口改为8210。
+```
+
+> 执行结果：服务端口由 210 改为 **8210**（避免使用 1024 以下的端口），同步更新 backend/app.js（端口常量与文件头说明）、frontend/index.html 页脚、三个内页的接口地址、三个 JS 的报错提示、启动.bat（窗口标题与自动打开地址）、readme.md、AGENTS.md 与 backend/Cheney_interface.md 中的服务地址。
+
