@@ -21,8 +21,7 @@ if not exist "node_modules" (
 
 if exist ".env" goto run
 
-echo [2/4] 未找到 backend\.env，改用本次会话的环境变量启动（不会写入任何文件）。
-echo        如需固定配置，请把 .env.example 复制为 .env 并填写密码。
+echo [2/4] 未找到 backend\.env，现在按你的输入生成一份（只存在本机，已被 .gitignore 排除）。
 echo.
 set "DB_HOST=127.0.0.1"
 set "DB_PORT=3306"
@@ -30,6 +29,16 @@ set "DB_USER=root"
 set "DB_NAME=cheney_tech_site"
 set /p "DB_PASSWORD=请输入本机 MySQL 密码（直接回车默认 root）："
 if not defined DB_PASSWORD set "DB_PASSWORD=root"
+
+> ".env" (
+  echo DB_HOST=%DB_HOST%
+  echo DB_PORT=%DB_PORT%
+  echo DB_USER=%DB_USER%
+  echo DB_PASSWORD=%DB_PASSWORD%
+  echo DB_NAME=%DB_NAME%
+)
+echo [2/4] 已生成 backend\.env：数据库 %DB_NAME%，账号 %DB_USER%@%DB_HOST%:%DB_PORT%
+echo.
 
 :run
 echo [3/4] 启动服务：http://localhost:8210

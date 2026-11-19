@@ -54,8 +54,8 @@ technews/
    npm i
    ```
 
-2. 数据库凭据：把 `backend/.env.example` 复制为 `backend/.env`，填写本机 MySQL 的 `DB_USER`、`DB_PASSWORD` 等信息（`.env` 不会提交到仓库）。
-   不建 `.env` 时，`启动.bat` 会临时询问密码，仅对本次进程生效。
+2. 数据库凭据：首次双击 `启动.bat` 时，若 `backend/.env` 不存在，脚本会询问本机 MySQL 密码并**自动生成** `backend/.env`（变量 `DB_HOST/DB_PORT/DB_USER/DB_PASSWORD/DB_NAME`，已被 `.gitignore` 排除，不会提交）。
+   也可以手动把 `backend/.env.example` 复制为 `backend/.env` 后填写。
 3. 按 `backend/Cheney_database.md` 中的 SQL 重建数据库（仅换机器时需要）。
 4. 双击根目录的 `启动.bat`，或在 `backend/` 下执行 `node app.js`。
 5. 浏览器打开 <http://localhost:8210>。
